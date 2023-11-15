@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Entry Data mahasiswa</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      /* CSS untuk navbar */
+      .navbar {
+        background-color: #69a304;
+        overflow: hidden;
+      }
+
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background-color: #f8f1f1;
+        color: black;
+      }
+
+      /* CSS untuk form */
+      form {
+        margin: 20px;
+      }
+
+      label,
+      input,
+      select,
+      textarea {
+        display: inline-block;
+        margin-bottom: 10px;
+        vertical-align: top;
+      }
+
+      label {
+        width: 120px;
+        text-align: right;
+        padding-right: 16px;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#">Data mahasiswa</a>
+      <a href="#">Master Data</a>
+      <a href="#">Tambah Data</a>
+    </div>
+
+    <h1>Form Entry Data mahasiswa</h1>
+    <form>
+      <label for="nim">NIM:</label>
+      <input type="text" id="nim" name="nim" required /><br />
+
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required /><br />
+
+      <label for="tempat_lahir">Tempat Lahir:</label>
+      <input type="text" id="tempat_lahir" name="tempat_lahir"bogor required /><br />
+
+      <label for="tanggal_lahir">Tanggal Lahir:</label>
+      <input
+        type="date"
+        id="tanggal_lahir"
+        name= ahmad muhammad jibril
+        required
+      /><br />
+
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" name="alamat" rows="4" required></textarea><br />
+
+      <label for="no_telepon">No Telepon:081290732190</label>
+      <input type="text" id="no_telepon" name="no_telepon" required /><br />
+
+      <label for="jabatan">Jabatan:</label>
+      <select id="jabatan" name="jabatan" required>
+        <option value="siswa">siswa</option>
+        <option value="mahasiswa">siswa</option>
+        <option value="mahasiswa">mahasiswa</option></select
+      ><br />
+
+      <label for="status">Status:</label>
+      <select id="status" name="status" required>
+        <option value="aktif">Aktif</option>
+        <option value="tidak_aktif">Tidak Aktif</option></select
+      ><br />
+
+      <input type="submit" value="Simpan" />
+      <input type="reset" value="Batal" />
+    </form>
+  </body>
+</html>
